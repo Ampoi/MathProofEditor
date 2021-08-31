@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IdeaSheet</title>
+    <link rel="stylesheet" href="Stylesheet/All.css">
+    <link rel="stylesheet" href="Stylesheet/code.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1 id="logo">
+        IdeaSheet
+      </h1>
+      <button class ="icons" onclick="df();" id="dButton">&#xe171;</button>
+    </header>
+    <main>
+      <div class="block" id="blockArea">
+        <input type="text" id="tArea" placeholder="ここに入力...">
+        <button class="mini-block" id="nothing" onclick="cButtonWriteCode();"></button>
+        <select id="selectBox">
+          <option value="quote">引用</option>
+          <option value="conjunction">接続詞</option>
+          <option value="object">図形</option>
+          <option value="opsymbol">記号</option>
+          <option value="number">数字</option>
+          <option value="others">その他</option>
+        </select>
+        <div id="blockBox"></div>
+      </div>
+      <div class="big-block">
+        <div class="mini-buttons">
+          <button class="mini-button icons" onclick="erace();">&#xe14a;</button>
+          <button class="mini-button icons" onclick="eAll();">&#xe92e;</button>
+          <button class="mini-button icons" onclick="enter();">&#xe5d9;</button>
+          <button class="mini-button icons" onclick="tab();">&#xe31c;</button>
+        </div>
+        <div class="harf-block" id="codeArea"></div>
+      </div>
+      <script src="code.js"></script>
+    </main>
+  </body>
+</html>
